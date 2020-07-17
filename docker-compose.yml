@@ -1,0 +1,14 @@
+version: "3"
+services:
+  stlarm:
+    build: . 
+    container_name: stlarm
+    environment:
+      - JUPYTER_ENABLE_LAB=yes
+      - STLARM_BASE_DIR=/home/jovyan/work/
+      - AMIE_JAR_PATH=/home/jovyan/work/amie/bin/amie3.jar
+      - PYTHONPATH=/home/jovyan/work/stlarm:/home/jovyan/work/trajminer
+    ports:
+      - "127.0.0.1:8888:8888"
+    volumes:
+      - .:/home/jovyan/work

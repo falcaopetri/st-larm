@@ -1,0 +1,3 @@
+[submodule "ontology-visualization"]
+	path = ontology-visualization
+	url = https://github.com/usc-isi-i2/ontology-visualization

@@ -1,0 +1,32 @@
+version: 2
+jobs:
+  test:
+    working_directory: ~/trajminer
+    docker:
+      - image: circleci/python:3.6.7
+    steps:
+      - checkout
+      - run:
+          name: Dependencies
+          command: pip install . pytest --user
+      - run:
+          name: Run tests
+          command: python -m pytest ./trajminer
+  code_style:
+    docker:
+      - image: circleci/python:3.6.7
+    steps:
+      - checkout
+      - run:
+          name: Dependencies
+          command: pip install flake8 --user
+      - run:
+          name: flake8
+          command: /home/circleci/.local/bin/flake8 --extend-ignore=E731
+
+workflows:
+  version: 2
+  all:
+    jobs:
+      - test
+      - code_style

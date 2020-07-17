@@ -1,0 +1,4 @@
+geopy==2.0.0
+owlready2==0.24
+termcolor==1.1.0
+tqdm==4.47.0

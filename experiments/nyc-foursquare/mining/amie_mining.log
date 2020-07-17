@@ -1,0 +1,394 @@
+Using the default schema relations
+Using Support as pruning metric with threshold 50
+countProjectionBindings var=?i in ?b  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <hasCheckin>  ?b has taken 33768 ms
+countProjectionBindings var=?i in ?a  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <hasPOI>  ?b has taken 33458 ms
+countProjectionBindings var=?i in ?a  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <withinTimeWindow>  ?b has taken 126731 ms
+countProjectionBindings var=?i in ?b  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <withinTimeWindow>  ?b has taken 127971 ms
+countProjectionBindings var=?i in ?b  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <withinRadius>  ?b has taken 130547 ms
+countProjectionBindings var=?i in ?a  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <withinRadius>  ?b has taken 128368 ms
+countProjectionBindings var=?i in ?b  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <before>  ?b has taken 122730 ms
+countProjectionBindings var=?i in ?a  <hasTime>  ?h  ?i  <hasTime>  ?h   => ?a  <before>  ?b has taken 121352 ms
+countProjectionBindings var=?m in ?a  <hasCheckin>  ?f  ?f  <hasTime>  ?l  ?m  <hasTime>  ?l   => ?a  <hasTrajectoryCategory>  <Weekday> has taken 29933 ms
+countProjectionBindings var=?o in ?a  <hasCheckin>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasDayOfTheWeek>  ?b has taken 39137 ms
+countProjectionBindings var=?o in ?a  <hasCheckin>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasTrajectoryCategory>  ?b has taken 38690 ms
+countProjectionBindings var=?o in ?a  <hasCheckin>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasMonth>  ?b has taken 38838 ms
+countProjectionBindings var=?o in ?b  <hasCheckin>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasTrajectory>  ?b has taken 39272 ms
+countProjectionBindings var=?o in ?g  <hasPOI>  ?a  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasPOICategory>  ?b has taken 37772 ms
+countProjectionBindings var=?k in ?b  <hasTime>  ?j  ?k  <hasTime>  ?j  ?a  <hasTrajectoryCategory>  <Weekday>   => ?a  <hasCheckin>  ?b has taken 38324 ms
+countProjectionBindings var=?o in ?a  <hasCheckin>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasCheckin>  ?b has taken 31719 ms
+countProjectionBindings var=?o in ?a  <hasCheckin>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasCheckin>  ?b (rewritten to ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasCheckin>  ?h) has taken 32544 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <hasCheckin>  ?b has taken 126488 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <hasCheckin>  ?b has taken 125564 ms
+countProjectionBindings var=?o in ?g  <before>  ?b  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasCheckin>  ?b has taken 164207 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <hasCheckin>  ?b has taken 151957 ms
+Rule ?h  <hasPOI>  ?b  ?a  <withinTimeWindow>  ?h   => ?a  <hasPOI>  ?b discarded by functionality heuristic with ratio 0.04283490429106148
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <hasTrajectory>  ?a   => ?a  <hasCheckin>  ?b has taken 48525 ms
+countProjectionBindings var=?o in ?a  <hasDayOfTheWeek>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasCheckin>  ?b has taken 48601 ms
+Rule ?g  <hasPOI>  ?b  ?g  <withinTimeWindow>  ?a   => ?a  <hasPOI>  ?b discarded by functionality heuristic with ratio 0.04283490429106148
+countProjectionBindings var=?o in ?a  <hasMonth>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasCheckin>  ?b has taken 49131 ms
+countProjectionBindings var=?o in ?b  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasCheckin>  ?b has taken 167457 ms
+countProjectionBindings var=?o in ?g  <hasPOI>  ?b  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasPOI>  ?b (rewritten to ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?g  <hasPOI>  ?b) has taken 31467 ms
+countProjectionBindings var=?o in ?g  <hasPOI>  ?b  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasPOI>  ?b has taken 33338 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <hasCheckin>  ?b has taken 148297 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <hasPOI>  ?b has taken 120319 ms
+countProjectionBindings var=?o in ?o  <hasPOI>  ?m  ?b  <hasPOICategory>  ?h  ?m  <hasPOICategory>  ?h   => ?a  <hasPOI>  ?b has taken 28165 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <hasPOI>  ?b has taken 122830 ms
+countProjectionBindings var=?o in ?b  <hasPOICategory>  ?h  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasPOI>  ?b has taken 45126 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinRadius>  ?h   => ?a  <hasPOI>  ?b has taken 142152 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasPOI>  ?b has taken 148517 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?a   => ?a  <hasPOI>  ?b has taken 123396 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <hasPOI>  ?b has taken 128576 ms
+countProjectionBindings var=?p9 ?a  <hasTrajectoryCategory>  ?h  ?m  <hasTrajectoryCategory>  ?h  ?m  ?p9  ?p   => ?a  <hasCheckin>  ?b has taken 37741 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <hasTrajectoryCategory>  ?h   => ?a  <hasCheckin>  ?b has taken 46547 ms
+countProjectionBindings var=?p9 ?a  <hasTrajectoryCategory>  ?h  ?m  <hasTrajectoryCategory>  ?h  ?o  ?p9  ?m   => ?a  <hasCheckin>  ?b has taken 28853 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinRadius>  ?n  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 134959 ms
+countProjectionBindings var=?p9 ?a  <before>  ?n  ?g  <hasTime>  ?b  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 137981 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinTimeWindow>  ?n  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 139370 ms
+countProjectionBindings var=?p in ?m  <hasMonth>  ?p  ?a  <hasTrajectoryCategory>  ?h  ?m  <hasTrajectoryCategory>  ?h   => ?a  <hasCheckin>  ?b has taken 39722 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinRadius>  ?a  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 138454 ms
+countProjectionBindings var=?p9 ?m  <before>  ?a  ?g  <hasTime>  ?b  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 144211 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinTimeWindow>  ?a  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 145903 ms
+countProjectionBindings var=?p9 ?a  <hasPOI>  ?n  ?g  <hasTime>  ?b  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 160777 ms
+countProjectionBindings var=?p9 ?m  <hasCheckin>  ?a  ?g  <hasTime>  ?b  ?g  ?p9  ?p   => ?a  <hasTime>  ?b has taken 164509 ms
+countProjectionBindings var=?p in ?m  <hasDayOfTheWeek>  ?p  ?a  <hasTrajectoryCategory>  ?h  ?m  <hasTrajectoryCategory>  ?h   => ?a  <hasCheckin>  ?b has taken 36256 ms
+countProjectionBindings var=?o in ?o  <hasTrajectory>  ?m  ?a  <hasTrajectoryCategory>  ?h  ?m  <hasTrajectoryCategory>  ?h   => ?a  <hasCheckin>  ?b has taken 20150 ms
+countProjectionBindings var=?p9 ?a  <hasTrajectoryCategory>  ?h  ?m  <hasTrajectoryCategory>  ?h  ?m  ?p9  ?t   => ?a  <hasCheckin>  ?b has taken 40403 ms
+countProjectionBindings var=?p9 ?a  <hasTrajectoryCategory>  ?h  ?m  <hasTrajectoryCategory>  ?h  ?s  ?p9  ?m   => ?a  <hasCheckin>  ?b has taken 28217 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinRadius>  ?n  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 134320 ms
+countProjectionBindings var=?p9 ?a  <before>  ?n  ?g  <hasTime>  ?b  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 134432 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinTimeWindow>  ?n  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 137876 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinRadius>  ?a  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 132710 ms
+countProjectionBindings var=?p9 ?m  <before>  ?a  ?g  <hasTime>  ?b  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 134892 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinTimeWindow>  ?a  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 139565 ms
+countProjectionBindings var=?p9 ?a  <hasPOI>  ?n  ?g  <hasTime>  ?b  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 158558 ms
+countProjectionBindings var=?p9 ?m  <hasCheckin>  ?a  ?g  <hasTime>  ?b  ?o  ?p9  ?g   => ?a  <hasTime>  ?b has taken 162064 ms
+countProjectionBindings var=?p in ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b  ?a  <withinRadius>  ?n   => ?a  <hasTime>  ?b has taken 156426 ms
+countProjectionBindings var=?p in ?a  <before>  ?n  ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 155519 ms
+countProjectionBindings var=?p in ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b  ?m  <withinRadius>  ?a   => ?a  <hasTime>  ?b has taken 154706 ms
+countProjectionBindings var=?p in ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b  ?a  <withinTimeWindow>  ?n   => ?a  <hasTime>  ?b has taken 159656 ms
+countProjectionBindings var=?p in ?m  <before>  ?a  ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 153997 ms
+countProjectionBindings var=?p in ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b  ?m  <withinTimeWindow>  ?a   => ?a  <hasTime>  ?b has taken 157195 ms
+countProjectionBindings var=?o in ?h  <before>  ?n  ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h   => ?a  <hasTime>  ?b has taken 69459 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h  ?h  <withinTimeWindow>  ?n   => ?a  <hasTime>  ?b has taken 71353 ms
+countProjectionBindings var=?o in ?h  <hasPOI>  ?n  ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h   => ?a  <hasTime>  ?b has taken 77180 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h  ?h  <withinRadius>  ?n   => ?a  <hasTime>  ?b has taken 76481 ms
+countProjectionBindings var=?p in ?a  <hasPOI>  ?n  ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 169508 ms
+countProjectionBindings var=?p in ?m  <hasCheckin>  ?a  ?g  <hasPOI>  ?p  ?g  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 167532 ms
+countProjectionBindings var=?o in ?m  <before>  ?h  ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h   => ?a  <hasTime>  ?b has taken 71549 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h  ?m  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 75616 ms
+countProjectionBindings var=?o in ?m  <hasCheckin>  ?h  ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h   => ?a  <hasTime>  ?b has taken 79252 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?a  <withinRadius>  ?h  ?m  <withinRadius>  ?h   => ?a  <hasTime>  ?b has taken 77938 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinRadius>  ?n  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 143262 ms
+countProjectionBindings var=?p9 ?a  <before>  ?n  ?g  <hasTime>  ?b  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 144058 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinRadius>  ?a  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 142906 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinTimeWindow>  ?n  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 149153 ms
+countProjectionBindings var=?p9 ?m  <before>  ?a  ?g  <hasTime>  ?b  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 144942 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinTimeWindow>  ?a  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 150292 ms
+countProjectionBindings var=?p9 ?a  <hasPOI>  ?n  ?g  <hasTime>  ?b  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 176618 ms
+countProjectionBindings var=?p9 ?m  <hasCheckin>  ?a  ?g  <hasTime>  ?b  ?g  ?p9  ?t   => ?a  <hasTime>  ?b has taken 179400 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinRadius>  ?n  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 137759 ms
+countProjectionBindings var=?p9 ?a  <before>  ?n  ?g  <hasTime>  ?b  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 137353 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinRadius>  ?a  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 136597 ms
+countProjectionBindings var=?p9 ?m  <before>  ?a  ?g  <hasTime>  ?b  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 134385 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?a  <withinTimeWindow>  ?n  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 138305 ms
+countProjectionBindings var=?p9 ?g  <hasTime>  ?b  ?m  <withinTimeWindow>  ?a  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 137831 ms
+countProjectionBindings var=?o in ?g  <before>  ?n  ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a   => ?a  <hasTime>  ?b has taken 73065 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a  ?g  <withinTimeWindow>  ?n   => ?a  <hasTime>  ?b has taken 75147 ms
+countProjectionBindings var=?o in ?g  <hasPOI>  ?n  ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a   => ?a  <hasTime>  ?b has taken 80114 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a  ?g  <withinRadius>  ?n   => ?a  <hasTime>  ?b has taken 80710 ms
+countProjectionBindings var=?o in ?m  <hasCheckin>  ?g  ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a   => ?a  <hasTime>  ?b has taken 79128 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a  ?m  <withinRadius>  ?g   => ?a  <hasTime>  ?b has taken 78644 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a  ?m  <withinTimeWindow>  ?g   => ?a  <hasTime>  ?b has taken 75967 ms
+countProjectionBindings var=?o in ?m  <before>  ?g  ?o  <hasTime>  ?b  ?g  <withinRadius>  ?a   => ?a  <hasTime>  ?b has taken 70599 ms
+countProjectionBindings var=?p9 ?a  <hasPOI>  ?n  ?g  <hasTime>  ?b  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 158964 ms
+countProjectionBindings var=?p9 ?m  <hasCheckin>  ?a  ?g  <hasTime>  ?b  ?s  ?p9  ?g   => ?a  <hasTime>  ?b has taken 163673 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?m  <withinRadius>  ?g  ?g  <withinTimeWindow>  ?a   => ?a  <hasTime>  ?b has taken 64297 ms
+countProjectionBindings var=?o in ?g  <before>  ?n  ?o  <hasTime>  ?b  ?g  <withinTimeWindow>  ?a   => ?a  <hasTime>  ?b has taken 66167 ms
+countProjectionBindings var=?o in ?m  <before>  ?g  ?o  <hasTime>  ?b  ?g  <withinTimeWindow>  ?a   => ?a  <hasTime>  ?b has taken 66439 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?g  <withinRadius>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <hasTime>  ?b has taken 67127 ms
+countProjectionBindings var=?o in ?m  <hasCheckin>  ?g  ?o  <hasTime>  ?b  ?g  <withinTimeWindow>  ?a   => ?a  <hasTime>  ?b has taken 70742 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?g  <withinTimeWindow>  ?a  ?g  <withinTimeWindow>  ?n   => ?a  <hasTime>  ?b has taken 70621 ms
+countProjectionBindings var=?o in ?g  <hasPOI>  ?n  ?o  <hasTime>  ?b  ?g  <withinTimeWindow>  ?a   => ?a  <hasTime>  ?b has taken 71348 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?g  <withinTimeWindow>  ?a  ?m  <withinTimeWindow>  ?g   => ?a  <hasTime>  ?b has taken 72190 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?h  <before>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 68129 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?o  <hasTime>  ?b  ?h  <withinRadius>  ?n   => ?a  <hasTime>  ?b has taken 75771 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?o  <hasTime>  ?b  ?m  <withinRadius>  ?h   => ?a  <hasTime>  ?b has taken 77589 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?o  <hasTime>  ?b  ?h  <withinTimeWindow>  ?n   => ?a  <hasTime>  ?b has taken 79310 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?o  <hasTime>  ?b  ?m  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 79293 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?h  <hasPOI>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 83233 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?m  <hasCheckin>  ?h  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 83230 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?m  <before>  ?h  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 83573 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?m  <before>  ?g  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 68441 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?o  <hasTime>  ?b  ?g  <withinRadius>  ?n   => ?a  <hasTime>  ?b has taken 78107 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?o  <hasTime>  ?b  ?m  <withinTimeWindow>  ?g   => ?a  <hasTime>  ?b has taken 79737 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?o  <hasTime>  ?b  ?m  <withinRadius>  ?g   => ?a  <hasTime>  ?b has taken 79947 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?o  <hasTime>  ?b  ?g  <withinTimeWindow>  ?n   => ?a  <hasTime>  ?b has taken 80474 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?g  <hasPOI>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 83453 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?m  <hasCheckin>  ?g  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 84012 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?g  <before>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 83542 ms
+countProjectionBindings var=?k in ?g  <hasCheckin>  ?a  ?k  <hasTime>  ?b  ?g  <hasTrajectoryCategory>  <Weekday>   => ?a  <hasTime>  ?b has taken 26575 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?o  <hasTime>  ?b  ?g  <hasTrajectoryCategory>  ?n   => ?a  <hasTime>  ?b has taken 34790 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?g  <hasMonth>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 34736 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?g  <hasCheckin>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 35397 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?g  <hasDayOfTheWeek>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 35090 ms
+countProjectionBindings var=?o in ?h  <before>  ?n  ?o  <hasTime>  ?b  ?a  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 66751 ms
+countProjectionBindings var=?o in ?m  <before>  ?h  ?o  <hasTime>  ?b  ?a  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 66749 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?h  <withinRadius>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 67244 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?m  <withinRadius>  ?h  ?a  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 67551 ms
+countProjectionBindings var=?o in ?m  <hasCheckin>  ?h  ?o  <hasTime>  ?b  ?a  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 71878 ms
+countProjectionBindings var=?o in ?h  <hasPOI>  ?n  ?o  <hasTime>  ?b  ?a  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 72359 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?a  <withinTimeWindow>  ?h  ?h  <withinTimeWindow>  ?n   => ?a  <hasTime>  ?b has taken 71976 ms
+countProjectionBindings var=?o in ?o  <hasTime>  ?b  ?a  <withinTimeWindow>  ?h  ?m  <withinTimeWindow>  ?h   => ?a  <hasTime>  ?b has taken 71793 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?o  <hasTime>  ?b  ?m  <hasTrajectory>  ?g   => ?a  <hasTime>  ?b has taken 31950 ms
+countProjectionBindings var=?o in ?a  <hasPOI>  ?h  ?h  <hasPOICategory>  ?n  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 31996 ms
+countProjectionBindings var=?o in ?a  <hasPOI>  ?h  ?m  <hasPOI>  ?h  ?o  <hasTime>  ?b   => ?a  <hasTime>  ?b has taken 32230 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <hasCheckin>  ?b has taken 165804 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <hasPOI>  ?b has taken 168297 ms
+countProjectionBindings var=?q in ?a  <before>  ?b  ?a  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinTimeWindow>  ?b has taken 74479 ms
+countProjectionBindings var=?q in ?a  <before>  ?b  ?b  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinTimeWindow>  ?b has taken 72847 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <hasCheckin>  ?b has taken 163948 ms
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinRadius>  ?b   => ?a  <withinTimeWindow>  ?b has taken 85400 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinRadius>  ?b   => ?a  <withinTimeWindow>  ?b has taken 85372 ms
+countProjectionBindings var=?q in ?b  <before>  ?a  ?a  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinTimeWindow>  ?b has taken 77469 ms
+countProjectionBindings var=?q in ?b  <before>  ?a  ?b  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinTimeWindow>  ?b has taken 77788 ms
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinRadius>  ?a   => ?a  <withinTimeWindow>  ?b has taken 86599 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinRadius>  ?a   => ?a  <withinTimeWindow>  ?b has taken 85275 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <hasPOI>  ?b has taken 173271 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?b  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <hasCheckin>  ?b has taken 185241 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?a  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <hasPOI>  ?b has taken 183703 ms
+Query ?a  <hasPOI>  ?h  ?b  <hasPOI>  ?h   => ?a  <withinTimeWindow>  ?b discarded by PCA confidence upper bound 0.020347285458598926
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <hasCheckin>  ?b has taken 182817 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <withinTimeWindow>  ?b has taken 134662 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <withinTimeWindow>  ?b (rewritten to ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?h) has taken 133585 ms
+countProjectionBindings var=?o in ?b  <hasPOI>  ?h  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 139905 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <hasPOI>  ?b has taken 184580 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <hasCheckin>  ?b has taken 179712 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <hasPOI>  ?b has taken 180087 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <withinTimeWindow>  ?b has taken 129736 ms
+countProjectionBindings var=?o in ?a  <hasPOI>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 133067 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <withinTimeWindow>  ?b has taken 606055 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <withinTimeWindow>  ?b has taken 111541 ms
+countProjectionBindings var=?o in ?b  <before>  ?h  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 115097 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <withinTimeWindow>  ?b (rewritten to ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?g  <withinTimeWindow>  ?b) has taken 123072 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <withinTimeWindow>  ?b has taken 127115 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?b  ?g  <hasTrajectoryCategory>  ?n  ?o  <hasTrajectoryCategory>  ?n   => ?a  <withinTimeWindow>  ?b has taken 34668 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <withinTimeWindow>  ?b has taken 532733 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?b  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 137629 ms
+countProjectionBindings var=?o in ?b  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 614192 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinRadius>  ?h   => ?a  <withinTimeWindow>  ?b has taken 115573 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinRadius>  ?h   => ?a  <withinTimeWindow>  ?b has taken 543124 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 111637 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?g  <hasTrajectoryCategory>  ?n  ?o  <hasTrajectoryCategory>  ?n   => ?a  <withinTimeWindow>  ?b has taken 34226 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 139393 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 627605 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <withinTimeWindow>  ?b has taken 120396 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <withinTimeWindow>  ?b has taken 116940 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <withinTimeWindow>  ?b has taken 562582 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <withinTimeWindow>  ?b has taken 618300 ms
+countProjectionBindings var=?o in ?g  <before>  ?b  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 118935 ms
+countProjectionBindings var=?o in ?g  <before>  ?b  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 670653 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 108869 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?a   => ?a  <withinTimeWindow>  ?b has taken 108982 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?a   => ?a  <withinTimeWindow>  ?b has taken 525625 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b has taken 582199 ms
+countProjectionBindings var=?q in ?a  <before>  ?b  ?a  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinRadius>  ?b has taken 81336 ms
+countProjectionBindings var=?q in ?a  <before>  ?b  ?b  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinRadius>  ?b has taken 79531 ms
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinTimeWindow>  ?b   => ?a  <withinRadius>  ?b has taken 81106 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinTimeWindow>  ?b   => ?a  <withinRadius>  ?b has taken 82746 ms
+countProjectionBindings var=?q in ?b  <before>  ?a  ?a  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinRadius>  ?b has taken 84818 ms
+countProjectionBindings var=?q in ?b  <before>  ?a  ?b  <hasTime>  ?p  ?q  <hasTime>  ?p   => ?a  <withinRadius>  ?b has taken 86689 ms
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinTimeWindow>  ?a   => ?a  <withinRadius>  ?b has taken 84717 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinTimeWindow>  ?a   => ?a  <withinRadius>  ?b has taken 86181 ms
+countProjectionBindings var=?o in ?b  <hasPOI>  ?h  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 185233 ms
+countProjectionBindings var=?o in ?a  <hasPOI>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 183626 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <withinRadius>  ?b has taken 150981 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <withinRadius>  ?b has taken 966499 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinRadius>  ?h   => ?a  <withinRadius>  ?b has taken 139879 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinRadius>  ?h   => ?a  <withinRadius>  ?b (rewritten to ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?h) has taken 143182 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <withinRadius>  ?b has taken 138611 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <withinRadius>  ?b has taken 519904 ms
+countProjectionBindings var=?o in ?b  <before>  ?h  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 130644 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?b  ?g  <hasTrajectoryCategory>  ?n  ?o  <hasTrajectoryCategory>  ?n   => ?a  <withinRadius>  ?b has taken 38167 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <withinRadius>  ?b has taken 139890 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <withinRadius>  ?b (rewritten to ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?g  <withinRadius>  ?b) has taken 141487 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?b  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 175959 ms
+countProjectionBindings var=?o in ?b  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 729748 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <withinRadius>  ?b has taken 134757 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <withinRadius>  ?b has taken 519300 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 125051 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?g  <hasTrajectoryCategory>  ?n  ?o  <hasTrajectoryCategory>  ?n   => ?a  <withinRadius>  ?b has taken 39326 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 177255 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 735073 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <withinRadius>  ?b has taken 128521 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <withinRadius>  ?b has taken 515115 ms
+countProjectionBindings var=?o in ?g  <before>  ?b  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 125856 ms
+countProjectionBindings var=?o in ?g  <before>  ?b  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 731604 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?a   => ?a  <withinRadius>  ?b has taken 143726 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?a   => ?a  <withinRadius>  ?b has taken 972369 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <withinRadius>  ?b has taken 125953 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 122008 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <withinRadius>  ?b has taken 517222 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <withinRadius>  ?b has taken 706998 ms
+Query ?a  <hasPOI>  ?h  ?b  <hasPOI>  ?h   => ?a  <before>  ?b discarded by PCA confidence upper bound 0.09662492314662006
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinRadius>  ?b   => ?a  <before>  ?b has taken 82508 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinRadius>  ?b   => ?a  <before>  ?b has taken 83564 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinTimeWindow>  ?b   => ?a  <before>  ?b has taken 72617 ms
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?a  <withinTimeWindow>  ?b   => ?a  <before>  ?b has taken 75849 ms
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinRadius>  ?a   => ?a  <before>  ?b has taken 85268 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinRadius>  ?a   => ?a  <before>  ?b has taken 84320 ms
+countProjectionBindings var=?q in ?a  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinTimeWindow>  ?a   => ?a  <before>  ?b has taken 76671 ms
+countProjectionBindings var=?q in ?b  <hasTime>  ?p  ?q  <hasTime>  ?p  ?b  <withinTimeWindow>  ?a   => ?a  <before>  ?b has taken 76221 ms
+countProjectionBindings var=?o in ?b  <hasPOI>  ?h  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 199518 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <before>  ?b has taken 144973 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <before>  ?b has taken 591791 ms
+countProjectionBindings var=?o in ?b  <before>  ?h  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 125002 ms
+countProjectionBindings var=?o in ?b  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 519087 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b (rewritten to ?h  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?h) has taken 154389 ms
+countProjectionBindings var=?o in ?a  <before>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 156512 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <before>  ?b has taken 133743 ms
+countProjectionBindings var=?o in ?a  <hasPOI>  ?h  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 198403 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <before>  ?b has taken 720813 ms
+countProjectionBindings var=?o in ?g  <before>  ?b  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b (rewritten to ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?g  <before>  ?b) has taken 140476 ms
+countProjectionBindings var=?o in ?g  <before>  ?b  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 147327 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <before>  ?b has taken 141228 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?b  ?g  <hasTrajectoryCategory>  ?n  ?o  <hasTrajectoryCategory>  ?n   => ?a  <before>  ?b has taken 41923 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?b  ?a  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 196265 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinTimeWindow>  ?h   => ?a  <before>  ?b has taken 578730 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinRadius>  ?h   => ?a  <before>  ?b has taken 130161 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <before>  ?b has taken 131160 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <before>  ?b has taken 579994 ms
+countProjectionBindings var=?o in ?h  <hasTime>  ?n  ?o  <hasTime>  ?n  ?a  <withinRadius>  ?h   => ?a  <before>  ?b has taken 734163 ms
+countProjectionBindings var=?o in ?a  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <before>  ?b has taken 128809 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?g  <hasTrajectoryCategory>  ?n  ?o  <hasTrajectoryCategory>  ?n   => ?a  <before>  ?b has taken 44553 ms
+countProjectionBindings var=?o in ?g  <hasCheckin>  ?a  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 200754 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?b  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 126253 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <before>  ?b has taken 724195 ms
+countProjectionBindings var=?o in ?g  <before>  ?a  ?g  <hasTime>  ?n  ?o  <hasTime>  ?n   => ?a  <before>  ?b has taken 516838 ms
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <before>  ?b has taken 143750 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinTimeWindow>  ?a   => ?a  <before>  ?b has taken 591534 ms
+Rule ?a  <hasTime>  ?h  ?b  <hasTime>  ?h   => ?a  <withinTimeWindow>  ?b discarded by functionality heuristic with ratio 2.7297925141979337E-4
+Rule ?a  <hasTime>  ?h  ?b  <hasTime>  ?h   => ?a  <withinRadius>  ?b discarded by functionality heuristic with ratio 2.1566451122972816E-4
+Rule ?a  <hasTime>  ?h  ?b  <hasTime>  ?h   => ?a  <before>  ?b discarded by functionality heuristic with ratio 1.9933011284203346E-4
+countProjectionBindings var=?o in ?b  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?a   => ?a  <before>  ?b has taken 118450 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <withinTimeWindow>  ?b has taken 367725 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <withinTimeWindow>  ?b has taken 389082 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <withinRadius>  ?b has taken 451830 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <withinRadius>  ?b has taken 486592 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <before>  ?b has taken 484101 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?p   => ?a  <before>  ?b has taken 506728 ms
+countProjectionBindings var=?o in ?g  <hasTime>  ?n  ?o  <hasTime>  ?n  ?g  <withinRadius>  ?a   => ?a  <before>  ?b has taken 602607 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <withinTimeWindow>  ?b has taken 317411 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <withinTimeWindow>  ?b has taken 316576 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <withinRadius>  ?b has taken 380874 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <withinRadius>  ?b has taken 366667 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <before>  ?b has taken 416547 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?o  ?p9  ?m   => ?a  <before>  ?b has taken 407299 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?a  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <withinTimeWindow>  ?b has taken 427461 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?b  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <withinTimeWindow>  ?b has taken 424407 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?a  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <withinRadius>  ?b has taken 476169 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?b  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <withinRadius>  ?b has taken 474125 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?b  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <before>  ?b has taken 505150 ms
+countProjectionBindings var=?p in ?m  <hasPOI>  ?p  ?a  <hasTime>  ?h  ?m  <hasTime>  ?h   => ?a  <before>  ?b has taken 495260 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <withinTimeWindow>  ?b has taken 355229 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <withinTimeWindow>  ?b has taken 352432 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <withinRadius>  ?b has taken 409801 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <withinRadius>  ?b has taken 409820 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <withinTimeWindow>  ?b has taken 340956 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <withinTimeWindow>  ?b has taken 338819 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <before>  ?b has taken 458235 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?m  ?p9  ?t   => ?a  <before>  ?b has taken 452014 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <withinRadius>  ?b has taken 340100 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <withinRadius>  ?b has taken 339622 ms
+countProjectionBindings var=?p9 ?a  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <before>  ?b has taken 337887 ms
+countProjectionBindings var=?p9 ?b  <hasTime>  ?h  ?m  <hasTime>  ?h  ?s  ?p9  ?m   => ?a  <before>  ?b has taken 344429 ms
+Query ?b  <hasMonth>  ?n  ?h  <hasMonth>  ?n  ?a  <hasTrajectory>  ?h   => ?a  <hasTrajectory>  ?b discarded by functionality heuristic with ratio 0.06962025316455696
+Query ?b  <hasDayOfTheWeek>  ?n  ?h  <hasDayOfTheWeek>  ?n  ?a  <hasTrajectory>  ?h   => ?a  <hasTrajectory>  ?b discarded by functionality heuristic with ratio 0.04430379746835443
+Query ?a  <hasTrajectory>  ?h  ?b  <hasTrajectoryCategory>  ?n  ?h  <hasTrajectoryCategory>  ?n   => ?a  <hasTrajectory>  ?b discarded by functionality heuristic with ratio 0.018508089081432342
+Query ?a  <hasCheckin>  ?h  ?b  <hasTime>  ?n  ?h  <hasTime>  ?n   => ?a  <hasCheckin>  ?b discarded by functionality heuristic with ratio 6.583278472679394E-4
+Query ?a  <before>  ?h  ?h  <before>  ?n  ?n  <hasPOI>  ?b   => ?a  <hasPOI>  ?b discarded by functionality heuristic with ratio 0.014616437619563041
+Query ?n  <before>  ?a  ?g  <before>  ?n  ?g  <hasPOI>  ?b   => ?a  <hasPOI>  ?b discarded by functionality heuristic with ratio 0.014616437619563041
+countPairs vars ?b, ?a in ?b <hasTime> <Afternoon>  ?a <hasCheckin> ?j  ?j <hasTime> <Night>  ?x9 <hasCheckin> ?b   has taken 29932 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <hasPOI> ?b  ?i <hasTime> <Morning>  ?a <hasPOI> ?x9   has taken 26957 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <hasPOI> ?b  ?i <hasTime> <Morning>  ?a <hasPOI> ?x9   has taken 27392 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <hasPOI> ?b  ?i <hasTime> <Night>  ?a <hasPOI> ?x9   has taken 40143 ms
+Query ?g  <hasPOI>  ?b  ?a  <hasTime>  ?n  ?g  <hasTime>  ?n   => ?a  <hasPOI>  ?b discarded by functionality heuristic with ratio 6.852444038373687E-4
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 27613 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <withinRadius> ?j  ?j <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 26446 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 29006 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 33358 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <before> ?j  ?j <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 26386 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <withinRadius> ?b  ?i <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 27829 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Night>  ?a <withinTimeWindow> ?x9   has taken 50723 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <before> ?b  ?i <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 29091 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinRadius> ?j  ?j <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 28963 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <before> ?j  ?j <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 28280 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinRadius> ?j  ?j <hasTime> <Night>  ?a <withinTimeWindow> ?x9   has taken 46610 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 29989 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <before> ?j  ?j <hasTime> <Night>  ?a <withinTimeWindow> ?x9   has taken 44105 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <before> ?b  ?i <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 26108 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Night>  ?a <withinTimeWindow> ?x9   has taken 42916 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinRadius> ?b  ?i <hasTime> <Morning>  ?a <withinTimeWindow> ?x9   has taken 22424 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <before> ?b  ?i <hasTime> <Night>  ?a <withinTimeWindow> ?x9   has taken 38925 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinRadius> ?b  ?i <hasTime> <Night>  ?a <withinTimeWindow> ?x9   has taken 34020 ms
+Query ?a  <hasTime>  ?n  ?h  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <withinTimeWindow>  ?b discarded by functionality heuristic with ratio 3.411765765972251E-4
+Query ?a  <hasTime>  ?n  ?h  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <withinTimeWindow>  ?b discarded by functionality heuristic with ratio 2.923358290892462E-4
+Query ?b  <before>  ?h  ?a  <hasTime>  ?n  ?h  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b discarded by functionality heuristic with ratio 2.867071938799512E-4
+Query ?a  <hasTime>  ?n  ?g  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <withinTimeWindow>  ?b discarded by functionality heuristic with ratio 3.411765765972251E-4
+Query ?a  <hasTime>  ?n  ?g  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <withinTimeWindow>  ?b discarded by functionality heuristic with ratio 2.923358290892462E-4
+Query ?g  <before>  ?b  ?a  <hasTime>  ?n  ?g  <hasTime>  ?n   => ?a  <withinTimeWindow>  ?b discarded by functionality heuristic with ratio 2.861615552422831E-4
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <withinRadius> ?j  ?j <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 23197 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 24389 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <before> ?j  ?j <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 22599 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <withinRadius> ?b  ?i <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 24775 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 28046 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <before> ?b  ?i <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 29127 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinRadius> ?j  ?j <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 29824 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinRadius> ?j  ?j <hasTime> <Night>  ?a <withinRadius> ?x9   has taken 47759 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 31055 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <before> ?j  ?j <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 28560 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Night>  ?a <withinRadius> ?x9   has taken 48210 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinRadius> ?b  ?i <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 29227 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <before> ?j  ?j <hasTime> <Night>  ?a <withinRadius> ?x9   has taken 45372 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 27090 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinRadius> ?b  ?i <hasTime> <Night>  ?a <withinRadius> ?x9   has taken 42684 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <before> ?b  ?i <hasTime> <Morning>  ?a <withinRadius> ?x9   has taken 22247 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Night>  ?a <withinRadius> ?x9   has taken 39288 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <before> ?b  ?i <hasTime> <Night>  ?a <withinRadius> ?x9   has taken 33695 ms
+Query ?a  <hasTime>  ?n  ?h  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <withinRadius>  ?b discarded by functionality heuristic with ratio 4.257057369310395E-4
+Query ?a  <hasTime>  ?n  ?h  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <withinRadius>  ?b discarded by functionality heuristic with ratio 2.544917962031832E-4
+Query ?b  <before>  ?h  ?a  <hasTime>  ?n  ?h  <hasTime>  ?n   => ?a  <withinRadius>  ?b discarded by functionality heuristic with ratio 3.380604015177055E-4
+Query ?a  <hasTime>  ?n  ?g  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <withinRadius>  ?b discarded by functionality heuristic with ratio 4.257057369310395E-4
+Query ?a  <hasTime>  ?n  ?g  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <withinRadius>  ?b discarded by functionality heuristic with ratio 2.544917962031832E-4
+Query ?g  <before>  ?b  ?a  <hasTime>  ?n  ?g  <hasTime>  ?n   => ?a  <withinRadius>  ?b discarded by functionality heuristic with ratio 3.392765934650081E-4
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <before> ?j  ?j <hasTime> <Morning>  ?a <before> ?x9   has taken 22370 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Morning>  ?a <before> ?x9   has taken 24573 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?b <withinRadius> ?j  ?j <hasTime> <Morning>  ?a <before> ?x9   has taken 23125 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <before> ?b  ?i <hasTime> <Morning>  ?a <before> ?x9   has taken 24955 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <withinRadius> ?b  ?i <hasTime> <Morning>  ?a <before> ?x9   has taken 25607 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Night>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Morning>  ?a <before> ?x9   has taken 28709 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <before> ?j  ?j <hasTime> <Morning>  ?a <before> ?x9   has taken 26074 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Morning>  ?a <before> ?x9   has taken 28212 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <before> ?j  ?j <hasTime> <Night>  ?a <before> ?x9   has taken 42492 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinRadius> ?j  ?j <hasTime> <Morning>  ?a <before> ?x9   has taken 26539 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinTimeWindow> ?j  ?j <hasTime> <Night>  ?a <before> ?x9   has taken 43631 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <before> ?b  ?i <hasTime> <Morning>  ?a <before> ?x9   has taken 26827 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?b <withinRadius> ?j  ?j <hasTime> <Night>  ?a <before> ?x9   has taken 42014 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinRadius> ?b  ?i <hasTime> <Morning>  ?a <before> ?x9   has taken 22985 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <before> ?b  ?i <hasTime> <Night>  ?a <before> ?x9   has taken 38572 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Morning>  ?a <before> ?x9   has taken 21094 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinRadius> ?b  ?i <hasTime> <Night>  ?a <before> ?x9   has taken 34959 ms
+countPairs vars ?a, ?b in ?a <hasTime> <Afternoon>  ?i <withinTimeWindow> ?b  ?i <hasTime> <Night>  ?a <before> ?x9   has taken 32068 ms
+Query ?m  <before>  ?a  ?b  <hasPOI>  ?h  ?m  <hasPOI>  ?h   => ?a  <before>  ?b discarded by functionality heuristic with ratio 0.002038220034937138
+Query ?a  <hasTime>  ?n  ?h  <hasTime>  ?n  ?b  <withinTimeWindow>  ?h   => ?a  <before>  ?b discarded by functionality heuristic with ratio 2.463756586006959E-4
+Query ?b  <before>  ?h  ?a  <hasPOI>  ?n  ?h  <hasPOI>  ?n   => ?a  <before>  ?b discarded by functionality heuristic with ratio 0.0011598317537042735
+Query ?b  <before>  ?h  ?a  <hasTime>  ?n  ?h  <hasTime>  ?n   => ?a  <before>  ?b discarded by functionality heuristic with ratio 2.627824151142071E-4
+Query ?a  <hasTime>  ?n  ?h  <hasTime>  ?n  ?b  <withinRadius>  ?h   => ?a  <before>  ?b discarded by functionality heuristic with ratio 3.3282699523669594E-4
+Query ?g  <before>  ?b  ?a  <hasTime>  ?n  ?g  <hasTime>  ?n   => ?a  <before>  ?b discarded by functionality heuristic with ratio 4.5737811499782825E-4
+Query ?a  <hasTime>  ?n  ?g  <hasTime>  ?n  ?g  <withinTimeWindow>  ?b   => ?a  <before>  ?b discarded by functionality heuristic with ratio 2.463756586006959E-4
+Query ?a  <hasTime>  ?n  ?g  <hasTime>  ?n  ?g  <withinRadius>  ?b   => ?a  <before>  ?b discarded by functionality heuristic with ratio 3.3282699523669594E-4
+AMIE Queue statistics:
+gen: 1, calls: 159, added: 159
+gen: 2, calls: 5749, added: 5735
+gen: 3, calls: 173099, added: 126896
+gen: 4, calls: 3089390, added: 2296045
+gen: 5, calls: 0, added: 0
